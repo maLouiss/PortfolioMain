@@ -11,8 +11,8 @@
 
 header {
     background-color: #f0f0f0;
-    width: 100%;
     position: fixed;
+    width: 100%;
     z-index: 999;
     display: flex;
     justify-content: space-between;
@@ -40,36 +40,39 @@ header {
 
 section {
     padding: 100px 200px;
+    gap: 50px;
 }
 
 .main {
     width: 100%;
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    align-content:  center;
+    justify-content: center;
     background: url(abstract-digital-grid-black-background.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
-.main h2 {
+.main h3 {
     color: #fff;
     font-size: 1.6em;
     font-weight: 500;
-    position:relative; left:276px; top:0px;
 
 }
 
 
-.main h3 {
+.main h2 {
     color: #fff;
     font-size: 3em;
     font-weight: 700;
     letter-spacing: 1px;
     margin-top: 10px;
     margin-bottom: 30px;
-    position:relative; left:85px; top:0px;
+    
 }
 
 
@@ -81,32 +84,28 @@ p {
 }
 
 .main-btn {
-    color: #fff;
-    background-color: #3a6cf4;
+    color: #3549ff;
+    background-color: #d6e1ff;
     text-decoration: none;
     font-size: 1.1em;
     font-weight: 600;
-    display: inline-block;
-    position: relative;
     padding: 0.9375em 2.1875em;
     letter-spacing: 1px;
     border-radius: 15px;
     margin-bottom: 40px;
     transition: 0.7s ease;
-    position:relative; left:450px; top:110px;
-
 }
 
 .main-btn:hover {
-    background-color: #0a49f6;
+    background-color: #235dff;
     transform: scale(1.1);
+    color: #d6e1ff;
 }
 
 .social-icons a {
     color: #fff;
     font-size: 1.7em;
     padding-right: 20px;
-    position:relative; left:395px; top:115px;
 }
 
 .title {
@@ -153,7 +152,7 @@ p {
     text-align: center;
 }
 
-.info h3{
+.info h2{
     color: #3a6cf4;
     font-size: 1.2em;
     font-weight: 700;
@@ -238,7 +237,7 @@ p {
     font-size: 4.5em;
 }
 
-.contact .info h3 {
+.contact .info h2 {
     color: #000;
 }
 
@@ -264,11 +263,11 @@ p {
         padding: 80px 20px;
     }
 
-    .main-content h2{
+    .main-content h3{
         font-size: 1em;
     }
 
-    .main-content h3{
+    .main-content h2{
         font-size: 1.6em;
     }
 
@@ -276,6 +275,7 @@ p {
         flex-direction: column;
         align-items: center;
     }
+    
 
 }
 
@@ -284,13 +284,15 @@ p {
         font-size: 12px;
     }
 
-    .main-content h2{
+    .main-content h3{
         font-size: 0.8em;
     }
 
-    .main-content h3{
-        font-size: 1.4em;
+    .main-content h2{
+        font-size: 1.1em;
     }
+
+    
 }
 
 @media (max-width:300px){
